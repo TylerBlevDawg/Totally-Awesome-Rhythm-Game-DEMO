@@ -73,16 +73,18 @@ function gameModule:update(dt)
     end
 end
 
-return gameModule
-
 -- Debug fun
 
--- function love.keypressed(key)
---     if key == "space" then
---         gameModule.supHits = gameModule.supHits + 1
---     elseif key == "p" then
---         gameModule:pauseGame()
---     elseif key == "o" then
---         gameModule:activateGame()
---     end
--- end
+function gameModule.keypressed(key)
+    if key == "space" then
+        gameModule.supHits = gameModule.supHits + 1
+    elseif key == "p" then
+        gameModule:pauseGame()
+    elseif key == "o" then
+        gameModule:activateGame()
+    end
+end
+
+-- nothing goes below here >:|
+
+return gameModule
