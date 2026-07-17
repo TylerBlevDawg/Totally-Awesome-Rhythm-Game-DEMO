@@ -25,6 +25,8 @@ function love.keypressed(key)
         gameModule:checkHit(key)
         lastKeyHit = key
     end
+
+    gameModule.keypressed(key)
 end
 
 function testLevel:update(dt)
